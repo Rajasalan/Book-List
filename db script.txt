@@ -1,0 +1,52 @@
+
+CREATE TABLE [dbo].[tbl_Books](
+[book_id] [int] IDENTITY(1,1) NOT NULL,
+[title] [varchar](500) NOT NULL,
+[author] [varchar](500) NULL,
+[description] [varchar](2000) NULL,
+[description2] [varchar](2000) NULL,
+ CONSTRAINT [PK_tbl_Books] PRIMARY KEY CLUSTERED
+(
+[book_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+CREATE PROCEDURE [dbo].[usp_manage_books] ( @mode VARCHAR(36),
+@book_id int,
+@title  VARCHAR(500),
+@author  VARCHAR(500),
+@description  VARCHAR(500),
+@description2 VARCHAR(500) )
+AS
+BEGIN
+  IF(@mode = 'CREATE')
+  BEGIN
+   INSERT INTO tbl_Books
+   ([title], [author], [description], [description2])
+   VALUES
+  (@title, @author, @description, @description2 )
+  END
+  ELSE IF(@mode = 'EDIT')
+  BEGIN
+ UPDATE tbl_Books
+ SET [title] = @title,
+ [author] = @author,
+ [description] = @description,
+ [description2] = @description2
+ WHERE book_id = @book_id
+  END
+  ELSE IF(@mode = 'DELETE')
+  BEGIN
+ DELETE tbl_Books WHERE book_id = @book_id
+  END
+END
+
+
+CREATE PROCEDURE usp_fetch_books  
+AS
+  BEGIN
+    SELECT [book_id], [title], [author], [description], [description2]
+    FROM  tbl_Books
+  END

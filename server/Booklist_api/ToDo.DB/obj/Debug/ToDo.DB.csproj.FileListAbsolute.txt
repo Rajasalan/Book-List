@@ -1,0 +1,17 @@
+D:\Demo_Project\todo_api\To-Do_api\ToDo.DB\bin\Debug\ToDo.DB.dll
+D:\Demo_Project\todo_api\To-Do_api\ToDo.DB\bin\Debug\ToDo.DB.pdb
+D:\Demo_Project\todo_api\To-Do_api\ToDo.DB\obj\Debug\ToDo.DB.csprojAssemblyReference.cache
+D:\Demo_Project\todo_api\To-Do_api\ToDo.DB\obj\Debug\ToDo.DB.csproj.CoreCompileInputs.cache
+D:\Demo_Project\todo_api\To-Do_api\ToDo.DB\obj\Debug\ToDo.DB.dll
+D:\Demo_Project\todo_api\To-Do_api\ToDo.DB\obj\Debug\ToDo.DB.pdb
+D:\Demo_Project\Booklist_api\Booklist_api\ToDo.DB\bin\Debug\ToDo.DB.dll
+D:\Demo_Project\Booklist_api\Booklist_api\ToDo.DB\bin\Debug\ToDo.DB.pdb
+D:\Demo_Project\Booklist_api\Booklist_api\ToDo.DB\obj\Debug\ToDo.DB.csprojAssemblyReference.cache
+D:\Demo_Project\Booklist_api\Booklist_api\ToDo.DB\obj\Debug\ToDo.DB.csproj.CoreCompileInputs.cache
+D:\Demo_Project\Booklist_api\Booklist_api\ToDo.DB\obj\Debug\ToDo.DB.dll
+D:\Demo_Project\Booklist_api\Booklist_api\ToDo.DB\obj\Debug\ToDo.DB.pdb
+E:\React\Bengeens project\Booklist_api\ToDo.DB\bin\Debug\ToDo.DB.dll
+E:\React\Bengeens project\Booklist_api\ToDo.DB\bin\Debug\ToDo.DB.pdb
+E:\React\Bengeens project\Booklist_api\ToDo.DB\obj\Debug\ToDo.DB.csproj.CoreCompileInputs.cache
+E:\React\Bengeens project\Booklist_api\ToDo.DB\obj\Debug\ToDo.DB.dll
+E:\React\Bengeens project\Booklist_api\ToDo.DB\obj\Debug\ToDo.DB.pdb
