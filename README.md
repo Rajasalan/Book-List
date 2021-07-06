@@ -69,11 +69,11 @@ To-do list Improvements to be done for future:
 
 
 ## Status
-Project is: Completed for the assignment purpose, with further scope to enhance.
+Project is completed for the assignment purpose for a Job interview, with further scope to enhance.
 
 
 ## Inspiration
-Assignment for Job Interview, Self Learning, To enhance my skillsets, Continuos learning.
+Assignment for Job Interview, Self Learning, To enhance my skillsets, Continuous learning.
 
 
 ## Contact
