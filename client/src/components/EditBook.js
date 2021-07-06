@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {
   Button,
@@ -14,6 +14,7 @@ import {
 } from "reactstrap";
 
 function EditBook(props) {
+ 
   const [book, setBook] = useState({
     book_id: "",
     title: "",
@@ -22,6 +23,27 @@ function EditBook(props) {
     description2: "",
   });
   console.log(book);
+
+  useEffect(() => {
+    getBookList();
+  }, []);
+
+  function getBookList() {
+    const GetData = async () => {
+      const result = await axios(
+        "http://localhost:57356/api/v1/books/GetBookList"
+      );
+   const data = result.data.callBackObj.books;
+   let book = {};
+   if(data && data.length > 0){
+    book = data.find(x => x.book_id == props.match.params.id);
+   }
+      setBook(book);
+      console.log('edBook',book);
+    };
+
+    GetData();
+  }
 
   const UpdateBook = (e) => {
     e.preventDefault();
@@ -68,7 +90,6 @@ function EditBook(props) {
                       name="title"
                       id="title"
                       placeholder="Title"
-                      defaultValue={book.title}
                       value={book.title}
                       onChange={onChange}
                     />
@@ -76,7 +97,7 @@ function EditBook(props) {
                   <InputGroup className="mb-3">
                     <Input
                       type="text"
-                      name="Author"
+                      name="author"
                       id="author"
                       placeholder="author"
                       value={book.author}
